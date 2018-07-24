@@ -1,17 +1,19 @@
-var extensionOption = null;
-chrome.storage.sync.get('userOption', function(result) {
-	extensionOption = result.userOption
-	walk(document.body);
+chrome.storage.sync.get('userOption', (result) => {
+	const option = result.userOption;
+	walk(document.body, option);
 });
 
-function walk(node) {
-	// I stole this function from here:
-	// http://is.gd/mwZp7E
+function walk(node, option) {
+	// I stole this function from here: http://is.gd/mwZp7E
+	let child;
+	let next;
+
+	const isInputField = 
+		node.tagName && 
+		(node.tagName.toLowerCase() == 'input' || 
+		node.tagName.toLowerCase() == 'textarea');
 	
-	var child, next;
-	
-	if (node.tagName && (node.tagName.toLowerCase() == 'input' || node.tagName.toLowerCase() == 'textarea')) 
-	{
+	if ( isInputField ) {
 		return;
 	}
 
@@ -20,22 +22,23 @@ function walk(node) {
 		case 9:  // Document
 		case 11: // Document fragment
 			child = node.firstChild;
+
 			while ( child ) {
 				next = child.nextSibling;
-				walk(child);
+				walk( child, option );
 				child = next;
 			}
+
 			break;
 
 		case 3: // Text node
-			handleText(node, extensionOption);
+			handleText( node, option );
 			break;
 	}
 }
 
 function handleText(textNode, userOption) {
-	var v = textNode.nodeValue;
-	console.log('userOption: ', userOption);
+	let v = textNode.nodeValue;
 	
 	if (userOption === 'toLatino') {
 		v = v.replace(/\bLatinx\b/g, "Latino");
@@ -54,6 +57,10 @@ function handleText(textNode, userOption) {
 		v = v.replace(/\blatina\b/g, "latinx");
 		v = v.replace(/\bLatinas\b/g, "Latinxs");
 		v = v.replace(/\blatinas\b/g, "latinxs");
+	}
+
+	if (userOption === 'none') {
+		v = v;
 	}
 	
 	textNode.nodeValue = v;
