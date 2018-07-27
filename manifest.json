@@ -1,7 +1,7 @@
 {
-	"name": "Latina-Latino-Latinx",
+	"name": "Latino-Latinx",
 	"version": "1.0",
-	"description": "Replaces the text 'Latinx' with 'Latino' or 'Latino' with Latinx'.",
+	"description": "Replace the text 'Hispanic' and 'Latino' (or 'Latinx') with  'Latinx' (or 'Latino')",
 	"content_scripts": [
 		{
 			"matches": ["*://*/*"],
@@ -16,16 +16,18 @@
 	 "128": "correction-tape_128x128.png" },
 
 	"browser_action": {
-		"default_popup": "popup.html",
+		"default_popup": "options.html",
 		"default_icon": { 
 			"16": "correction-tape_16x16.png",
 			"32": "correction-tape_32x32.png",
 			"48": "correction-tape_48x48.png",
 		 "128": "correction-tape_128x128.png" }
 	},
+
 	"permissions": [
 		"storage"
 	], 
+	
 	"options_ui": {
     "page": "options.html",
     "open_in_tab": false

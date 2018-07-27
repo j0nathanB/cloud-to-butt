@@ -40,14 +40,20 @@ function walk(node, option) {
 function handleText(textNode, userOption) {
 	let v = textNode.nodeValue;
 	
-	if (userOption === 'toLatino') {
+	if (userOption === 'latino') {
+		v = v.replace(/\bHispanic\b/g, "Latino");
+		v = v.replace(/\bhispanic\b/g, "latino");
+
 		v = v.replace(/\bLatinx\b/g, "Latino");
 		v = v.replace(/\blatinx\b/g, "latino");
 		v = v.replace(/\bLatinxs\b/g, "Latinos");
 		v = v.replace(/\blatinxs\b/g, "latinos");
 	}
 
-	if (userOption === 'toLatinx') {
+	if (userOption === 'latinx') {
+		v = v.replace(/\bHispanic\b/g, "Latinx");
+		v = v.replace(/\bhispanic\b/g, "latinx");
+
 		v = v.replace(/\bLatino\b/g, "Latinx");
 		v = v.replace(/\blatino\b/g, "latinx");
 		v = v.replace(/\bLatinos\b/g, "Latinxs");

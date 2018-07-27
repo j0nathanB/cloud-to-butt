@@ -1,0 +1,134 @@
+body {
+  font-size: 14px;
+  background-color: whitesmoke;
+  width: auto;
+}
+
+#main {
+  width: 300px;
+  padding: 1.5em;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  background-color: white;
+}
+
+ol {
+  padding-left: 1.5em;
+  width: 100%;
+  list-style-position: outside;
+}
+
+ol li {
+  margin: none;
+  padding-top: 1em;
+}
+
+@keyframes ripple {
+  0% {
+    box-shadow: 0px 0px 0px 1px rgba(0, 0, 0, 0);
+  }
+  50% {
+    box-shadow: 0px 0px 0px 15px rgba(0, 0, 0, 0.1);
+  }
+  100% {
+    box-shadow: 0px 0px 0px 15px rgba(0, 0, 0, 0);
+  }
+}
+.md-radio {
+  margin: 16px 0;
+}
+.md-radio.md-radio-inline {
+  display: inline-block;
+}
+.md-radio input[type="radio"] {
+  display: none;
+}
+.md-radio input[type="radio"]:checked + label:before {
+  /* animation: ripple 0.2s linear forwards; */
+}
+.md-radio input[type="radio"]:checked + label:after {
+  transform: scale(1);
+}
+.md-radio label {
+  display: inline-block;
+  height: 20px;
+  position: relative;
+  padding: 0 30px;
+  margin-bottom: 0;
+  cursor: pointer;
+  vertical-align: bottom;
+}
+.md-radio label:before, .md-radio label:after {
+  position: absolute;
+  content: "";
+  border-radius: 50%;
+  /* transition: all 0.3s ease; */
+  /* transition-property: transform, border-color; */
+}
+.md-radio label:before {
+  left: 0;
+  top: 0;
+  width: 20px;
+  height: 20px;
+  border: 2px solid rgba(0, 0, 0, 0.54);
+}
+.md-radio label:after {
+  top: 5px;
+  left: 5px;
+  width: 10px;
+  height: 10px;
+  transform: scale(0);
+  background: red;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
+h2 {
+  padding-bottom: 0.5em;
+  margin: auto;
+  color: red;
+}
+
+p {
+  margin: none;
+}
+
+#choices {
+  font-size: 14px;
+  width: max-content;
+}
+
+#action {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-top: 2em;
+}
+
+button {
+  font-size: 16px;
+  padding: 1em;
+  width: max-content;
+  border: none;
+  background-color: red;
+  color: white;
+}
+
+button:focus {
+  outline: 0;
+}
+
+button:active {
+  background-color: pink
+}
+
+#status {
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 16px;
+  padding-left: 1.5em;
+}

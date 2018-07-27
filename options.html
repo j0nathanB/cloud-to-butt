@@ -1,17 +1,40 @@
 <!DOCTYPE html>
 <html>
-<head><title>My Test Extension Options</title></head>
+<head>
+  <link rel="stylesheet" href="styles.css">
+  <title>Latino-Latina-Latinx Options</title>
+</head>
 <body>
-    Choose an option:
-    <select id="userOption">
-        <option value="toLatinx">Latino => Latinx</option>
-        <option value="toLatino">Latinx => Latino</option>
-        <option value="none">None</option>
-       </select>
+  <div id="main">
+    <h2>Latino <=> Latinx</h2>
+    <ol>
+      <li>Select how to describe a person with Latin-American heritage.</li>
+      <li>Click 'Save' to have the browser display your choice exclusively.</li>
+      </ol>
+    
+    <div id="choices">
+      <form id="form">
+        <div class="md-radio">
+            <input id="latino" type="radio" name="option" value="latino">
+            <label for="latino">Latino</label>
+          </div>
+          <div class="md-radio">
+            <input id="latinx" type="radio" name="option" value="latinx">
+            <label for="latinx">Latinx</label>
+          </div>
+          <div class="md-radio">
+            <input id="none" type="radio" name="option" value="none">
+            <label for="none">None, leave as-is</label>
+          </div>
+        </div>
+        <div id="action">
+          <button type="submit" id="save">Save</button>
+          <div id="status"></div>
+        </div>
 
-<div id="status"></div>
-<button id="save">Save</button>
-
+      </form>
+    </div>
+  </div>
 <script src="options.js"></script>
 </body>
 </html>
