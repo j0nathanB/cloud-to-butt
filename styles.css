@@ -79,7 +79,7 @@ ol li {
   width: 10px;
   height: 10px;
   transform: scale(0);
-  background: red;
+  background: #ca3538;
 }
 
 *,
@@ -91,7 +91,7 @@ ol li {
 h2 {
   padding-bottom: 0.5em;
   margin: auto;
-  color: red;
+  color: #ca3538;
 }
 
 p {
@@ -115,7 +115,7 @@ button {
   padding: 1em;
   width: max-content;
   border: none;
-  background-color: red;
+  background-color: #ca3538;
   color: white;
 }
 
