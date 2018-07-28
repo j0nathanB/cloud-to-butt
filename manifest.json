@@ -1,6 +1,6 @@
 {
 	"name": "Latino-Latinx",
-	"version": "1.0",
+	"version": "2.0",
 	"description": "Replace the text 'Hispanic' and 'Latino' (or 'Latinx') with  'Latinx' (or 'Latino')",
 	"content_scripts": [
 		{
