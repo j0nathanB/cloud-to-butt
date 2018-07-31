@@ -1,8 +1,14 @@
 latino-latinx
 =============
-There is an ongoing debate about which term to use to refer to people with Latin-American heritage. The options for collectively referring to this group include the ethnonyms "Hispanic" and "Latino". "Latinx" is also used and it is gaining popularity. It is not without its own linguistic controversy. 
+This Chrome extension ensures that only "Latino" or "Latinx" are used to refer to people with Latin-American heritage. 
 
- This Chrome extension lets the user pick one ethnonym between "Latino" and "Latinx" to be used around the web. The user will no longer see the other two terms because their term of choice will have replaced them. 
+There is a debate about the proper collective noun to use for people with Latin-American heritage in English. The prevailing options include the ethnonyms "Hispanic", "Latino", and "Latinx". Though the terms are commonly used interchangeably, their definitions are different.  
+
+"Hispanic" is a term that includes only people from Spanish-speaking countries in Latin America and from Spain. It does not include people from Portugal or Brazil. 
+
+"Latino" is a shortening of *latinoamericano*, or "Latin American" in Spanish. It includes people only from Latin-American countries and not from Spain or Portugal.
+
+"Latinx" is the gender-neutral version of "Latino".
 
 Known limitations of this extension:
 - Conversions to "Latino" do not include gendered conversions to "Latina".
