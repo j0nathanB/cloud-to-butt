@@ -1,8 +1,20 @@
 Latino-Latinx
 =============
-This Chrome extension ensures that only "Latino" or "Latinx" are used to refer to people with Latin-American heritage. 
+![Arrows pointing away from "Hispanic" toward "Latino" and "Latina"](/chrome_pic.jpg)
 
-There is a debate about the proper collective noun to use for people with Latin-American heritage in English. The prevailing options include the ethnonyms "Hispanic", "Latino", and "Latinx". Though the terms are commonly used interchangeably, their definitions are different.  
+Overview
+--------
+This Chrome extension replaces instances of the word "Hispanic" with either "Latino" or "Latinx" to refer to people with Latin-American heritage. 
+
+Installation
+------------
+Install from the Chrome Web Store here: [https://chrome.google.com/webstore/detail/latino-latinx/gfhcjnaaakciomjhgmidnonbmapfkpeh](https://chrome.google.com/webstore/detail/latino-latinx/gfhcjnaaakciomjhgmidnonbmapfkpeh)
+
+In Chrome, choose Window > Extensions (or if you're on a Mac, More Tools > Extensions).  Drag LatinoLatinx.crx into the page that appears.
+
+Background
+----------
+The proper collective noun to use for people with Latin-American heritage in English is debated between the ethnonyms "Hispanic", "Latino", and "Latinx". Though the terms are commonly used interchangeably, their definitions are different.  
 
 "Hispanic" is a term that includes only people from Spanish-speaking countries in Latin America and from Spain. It does not include people from Portugal or Brazil. 
 
@@ -10,11 +22,7 @@ There is a debate about the proper collective noun to use for people with Latin-
 
 "Latinx" is the gender-neutral version of "Latino".
 
+Notes
+=====
 Known limitations of this extension:
 - Conversions to "Latino" do not include gendered conversions to "Latina".
-
-Installation
-------------
-Install from the Chrome Web Store here: [https://chrome.google.com/webstore/detail/latino-latinx/gfhcjnaaakciomjhgmidnonbmapfkpeh](https://chrome.google.com/webstore/detail/latino-latinx/gfhcjnaaakciomjhgmidnonbmapfkpeh)
-
-In Chrome, choose Window > Extensions (or if you're on a Mac, More Tools > Extensions).  Drag LatinoLatinx.crx into the page that appears.
