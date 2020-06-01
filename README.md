@@ -1,7 +1,5 @@
-latino-latinx
+Latino-Latinx
 =============
-![Map of Latin America](/550px-Latin_America_(orthographic_projection).svg.png)
-
 This Chrome extension ensures that only "Latino" or "Latinx" are used to refer to people with Latin-American heritage. 
 
 There is a debate about the proper collective noun to use for people with Latin-American heritage in English. The prevailing options include the ethnonyms "Hispanic", "Latino", and "Latinx". Though the terms are commonly used interchangeably, their definitions are different.  
